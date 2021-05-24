@@ -140,3 +140,16 @@
 ## 4.1.0(2021-01-11)
 * 功能
     - aio http session使用自定义timeout，可以和cache兼容使用（默认的timeout为什么不行，原因不明……）；
+
+## 4.1.1(2021-01-16)
+* bugfix
+    - 修复(workaround)win下结束爬取后报错的问题
+
+## 4.2(2021-4-4)
+* 功能
+    - 简易的 GUI 界面，自动获取 cookie，设置类型限定
+    - 完全异步爬取，在等待 buff 爬取时爬取 steam数据
+    - 命令行界面的回滚支持
+    - 去除 numpy, pandas 依赖，控制可执行文件尺寸
+* bugfix
+    - 修复 buff 的缓存问题
