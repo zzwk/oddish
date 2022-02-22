@@ -9,7 +9,8 @@
             "type": "python",
             "request": "launch",
             "module": "src",
-            "subProcess": true
+            "subProcess": true,
+            "justMyCode": false
         }
     ]
 }

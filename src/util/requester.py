@@ -86,9 +86,9 @@ async def async_get_json_dict_raw(url, cookies, session: ClientSession, proxy = 
 
     # 首次出错时异步休眠，第二次出错时全体任务休眠。
     await timer.async_sleep_awhile()
-    if times == 2:
-        log.error('aio http error happens 2 times. use sync wait')
-        timer.sleep_awhile()
+    # if times == 2:
+    #     log.error('aio http error happens 2 times. use sync wait')
+    #     timer.sleep_awhile()
 
     data = await async_get_json_dict_raw(url, cookies, session, proxy, times + 1)
     return data
